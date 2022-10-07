@@ -1,0 +1,21 @@
+.body {
+	font-family: 'League Spartan', sans-serif;
+	font-weight: 700;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background .5s;
+
+	&_theme1 {
+		background: var(--theme1-Very-dark-desaturated-blue-main-background);
+	}
+
+	&_theme2 {
+		background: var(--theme2-Light-gray-main-background);
+	}
+
+	&_theme3 {
+		background: var(--theme3-Very-dark-violet-main-background);
+	}
+}

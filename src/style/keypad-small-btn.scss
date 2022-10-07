@@ -1,0 +1,34 @@
+.keypad-small-btn {
+	font-size: 32px;
+	transition: background .5s, box-shadow .5s, color .5s;
+
+	&_theme1 {
+		background: var(--theme1-Light-grayish-orange-key-background);
+		box-shadow: 0 5px var(--theme1-Grayish-orang-key-shadow);
+		color: var(--theme1-Very-dark-grayish-blue);
+
+		&:hover {
+			background: var(--theme1-White-text);
+		}
+	}
+
+	&_theme2 {
+		background: var(--theme2-Light-grayish-yellow-key-background);
+		box-shadow: 0 5px var(--theme2-Dark-grayish-orange-key-shadow);
+		color: var(--theme2-Very-dark-grayish-yellow);
+
+		&:hover {
+			background: var(--theme1-White-text);
+		}
+	}
+
+	&_theme3 {
+		background: var(--theme3-Very-dark-violet-key-background);
+		box-shadow: 0 5px var(--theme3-Dark-magenta-key-shadow);
+		color: var(--theme3-Light-yellow);
+
+		&:hover {
+			background: hsl(267, 54%, 44%);
+		}
+	}
+}

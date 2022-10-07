@@ -1,0 +1,34 @@
+.keypad-equal-btn {
+	font-size: 30px;
+	transition: background .5s, box-shadow .5s, color .5s;
+
+	&_theme1 {
+		background: var(--theme1-Red-key-background);
+		box-shadow: 0 5px var(--theme1-Dark-red-key-shadow);
+		color: var(--theme1-White-text);
+
+		&:hover {
+			background: hsl(6, 93%, 67%);
+		}
+	}
+
+	&_theme2 {
+		background: var(--theme2-Orange-key-background);
+		box-shadow: 0 5px var(--theme2-Dark-orange-key-shadow);
+		color: var(--theme2-White-text);
+
+		&:hover {
+			background: hsl(25, 100%, 61%);
+		}
+	}
+
+	&_theme3 {
+		background: var(--theme3-Pure-cyan-key-background);
+		box-shadow: 0 5px var(--theme3-Soft-cyan-key-shadow);
+		color: var(--theme3-Very-dark-blue);
+
+		&:hover {
+			background: hsl(177, 100%, 79%);
+		}
+	}
+}

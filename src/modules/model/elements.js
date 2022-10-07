@@ -1,0 +1,11 @@
+export const keypad = document.querySelector('.keypad');
+export const keypadBtns = document.querySelectorAll('.keypad-small-btn');
+export const keypadEqual = document.querySelector('.keypad-equal-btn');
+export const keypadDel = document.querySelector('.keypad-del-btn');
+export const keypadReset = document.querySelector('.keypad-reset-btn');
+export const calculatorScreen = document.querySelector('.main-content__screen');
+export const themeButtonsContainer = document.querySelector('.theme-changer__buttons');
+export const themeBtns = document.querySelectorAll('.theme-changer__btn');
+export const themeBtnIndicator = document.querySelector('.theme-changer__indicator');
+export const header = document.querySelector('.header');
+export const body = document.querySelector('.body');

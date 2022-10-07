@@ -1,0 +1,38 @@
+.main-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	&__screen {
+		margin: 0;
+		width: 100%;
+		height: 100px;
+		border-radius: 10px;
+		font-size: 40px;
+		padding: 30px 25px;
+		box-sizing: border-box;
+		text-align: right;
+		transition: background .5s, color .5s;
+
+		&_theme1 {
+			background: var(--theme1-Very-dark-desaturated-blue-screen-background);
+			color: var(--theme1-White-text);
+		}
+
+		&_theme2 {
+			background: var(--theme2-Very-light-gray-screen-background);
+			color: var(--theme2-Very-dark-grayish-yellow);
+		}
+
+		&_theme3 {
+			background: var(--theme3-Very-dark-violet-screen-background);
+			color: var(--theme3-Light-yellow);
+		}
+
+	}
+
+	&__keypad {
+		width: 100%;
+	}
+}

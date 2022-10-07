@@ -1,0 +1,19 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	transition: color .5s;
+	color: var(--theme1-White-text);
+
+
+	&_theme1 {
+		color: var(--theme1-White-text);
+	}
+
+	&_theme2 {
+		color: var(--theme2-Very-dark-grayish-yellow);
+	}
+
+	&_theme3 {
+		color: var(--theme3-Light-yellow);
+	}
+}

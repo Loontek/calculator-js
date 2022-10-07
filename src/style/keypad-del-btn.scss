@@ -1,0 +1,39 @@
+.keypad-del-btn {
+	font-size: 28px;
+	text-transform: uppercase;
+	transition: background .5s, box-shadow .5s, color .5s;
+
+	&_theme1 {
+		background: var(--theme1-Desaturated-dark-blue-key-background);
+		box-shadow: 0 5px var(--theme1-Desaturated-dark-blue-key-shadow);
+		color: var(--theme1-White-text);
+
+		&:hover {
+			background: hsl(224, 51%, 76%);
+		}
+	}
+
+	&_theme2 {
+		background: var(--theme2-Dark-moderate-cyan-key-background);
+		box-shadow: 0 5px var(--theme2-Very-dark-cyan-key-shadow);
+		color: var(--theme2-White-text);
+
+		&:hover {
+			background: hsl(185, 41%, 56%);
+		}
+	}
+
+	&_theme3 {
+		background: var(--theme3-Dark-violet-key-background);
+		box-shadow: 0 5px var(--theme3-Vivid-magenta-key-shadow);
+		color: var(--theme3-White-text);
+
+		&:hover {
+			background: hsl(280, 56%, 44%);
+		}
+	}
+
+	@media all and (max-width: 500px) {
+		font-size: 24px;
+	}
+}

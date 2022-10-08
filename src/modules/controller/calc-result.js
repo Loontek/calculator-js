@@ -11,6 +11,9 @@ export function calcResult() {
 		case 'x':
 			store.result = +store.firstNumber * +store.secondNumber;
 			break;
+		case '*':
+			store.result = +store.firstNumber * +store.secondNumber;
+			break;
 		case '/':
 			store.result = +store.firstNumber / +store.secondNumber;
 			break;

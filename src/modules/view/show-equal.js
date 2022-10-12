@@ -5,8 +5,10 @@ import * as elems from "../model/elements.js"
 
 export function showEqual() {
 	elems.keypadEqual.addEventListener('click', () => {
-		calcResult();
-		showResult();
-		store.inputValue = store.result;
+		if (store.inputValue !== '') {
+			calcResult();
+			showResult();
+			store.inputValue = store.result;
+		};
 	});
 }

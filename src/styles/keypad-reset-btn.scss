@@ -11,6 +11,11 @@
 		&:hover {
 			background: hsl(224, 51%, 76%);
 		}
+
+		&:active {
+			transition: background .1s;
+			background: hsla(33, 4%, 57%);
+		}
 	}
 
 	&_theme2 {
@@ -21,6 +26,11 @@
 		&:hover {
 			background: hsl(185, 41%, 56%);
 		}
+
+		&:active {
+			transition: background .1s;
+			background: hsla(30, 1%, 58%);
+		}
 	}
 
 	&_theme3 {
@@ -30,6 +40,11 @@
 
 		&:hover {
 			background: hsl(280, 56%, 44%);
+		}
+
+		&:active {
+			transition: background .1s;
+			background: hsla(0, 0%, 63%);
 		}
 	}
 

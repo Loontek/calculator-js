@@ -1,13 +1,7 @@
 import store from "../model/store.js";
-import { resetScreen } from "../view/reset-screen.js";
+import { showInput } from "../view/show-input.js";
 
 export function resetNumber() {
-	if (!store.result) {
-		if (!store.operator) {
-			store.firstNumber = '';
-		} else {
-			store.secondNumber = '';
-		}
-		resetScreen();
-	};
+	store.inputValue = store.inputValue.slice(0, [store.inputValue.length - 1]);
+	showInput();
 }

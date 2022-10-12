@@ -3,7 +3,7 @@ import NP from 'number-precision';
 
 export function calcResult() {
 	let expression = {
-		numbers: store.inputValue.split(/[\-\+\*\/]/),
+		numbers: store.inputValue.split(/[\-\+\x\*\/]/),
 		operators: splitOperators(store.inputValue),
 	};
 
@@ -11,13 +11,13 @@ export function calcResult() {
 	expression = multAndDevide(expression);
 	expression = plusAndMinus(expression);
 
-	return expression;
+	store.result = expression.numbers[0] + '';
 }
 
 function splitOperators(str) {
 	const operators = [];
 	str.split('').forEach(elem => {
-		if (isNaN(+elem) && elem !== '.' && elem !== '(' && elem !== ')') {
+		if (isNaN(+elem) && elem !== '.') {
 			operators.push(elem);
 		};
 	});
@@ -44,8 +44,13 @@ function multAndDevide(expression) {
 
 	for (let i = 0; i < localExpression.numbers.length; i++) {
 		localExpression.operators.forEach((elem, index) => {
-			if (elem === '/' || elem === '*') {
+			if (elem === '/' || elem === 'x' || elem === '*') {
 				switch (elem) {
+					case 'x':
+						localExpression.numbers[index] = NP.times(localExpression.numbers[index], localExpression.numbers[index + 1]);
+						localExpression.numbers.splice(index + 1, 1);
+						localExpression.operators.splice(index, 1);
+						break;
 					case '*':
 						localExpression.numbers[index] = NP.times(localExpression.numbers[index], localExpression.numbers[index + 1]);
 						localExpression.numbers.splice(index + 1, 1);

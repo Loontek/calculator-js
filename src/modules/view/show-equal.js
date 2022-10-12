@@ -7,6 +7,6 @@ export function showEqual() {
 	elems.keypadEqual.addEventListener('click', () => {
 		calcResult();
 		showResult();
-		store.operator = null;
+		store.inputValue = store.result;
 	});
 }

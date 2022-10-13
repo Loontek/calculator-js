@@ -62,7 +62,7 @@ function multi(expression) {
 
 	for (let i = 0; i < localExpression.numbers.length; i++) {
 		localExpression.operators.forEach((elem, index) => {
-			if (elem === '*' || elem === 'x') {
+			if (elem === '*') {
 				localExpression.numbers[index] = NP.times(localExpression.numbers[index], localExpression.numbers[index + 1]);
 				localExpression.numbers.splice(index + 1, 1);
 				localExpression.operators.splice(index, 1);

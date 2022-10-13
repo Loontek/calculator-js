@@ -7,8 +7,10 @@ import { addDelBtnEvent } from './modules/controller/add-del-btn-event.js';
 import { addResetBtnEvent } from './modules/controller/add-reset-btn-event.js';
 import { showEqual } from "./modules/view/show-equal.js";
 import { getValueFromKeybord } from './modules/controller/get-value-from-keybord.js';
+import { showTheme } from './modules/view/show-theme.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+	showTheme();
 	toggleTheme();
 	getBtnsValue();
 	addDelBtnEvent();

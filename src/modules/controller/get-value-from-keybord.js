@@ -34,9 +34,16 @@ export function getValueFromKeybord() {
 				elems.calculatorScreen.style.padding = '30px 25px';
 				break;
 			case 'Enter':
-				calcResult();
-				showResult();
-				store.inputValue = store.result;
+				if (store.errors.invalidInput) {
+					store.result = 'Error';
+					store.errors.invalidInput = false;
+					showResult();
+				} else {
+					store.result = 0;
+					calcResult();
+					showResult();
+					store.inputValue = store.result;
+				}
 				break;
 		};
 	});

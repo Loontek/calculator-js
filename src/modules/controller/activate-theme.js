@@ -8,7 +8,8 @@ export function activateTheme(number) {
 		btn.classList.add(`theme-changer__btn_theme${number}`);
 	};
 	elems.themeBtnIndicator.classList.add(`theme-changer__indicator_theme${number}`);
-	elems.calculatorScreen.classList.add(`main-content__screen_theme${number}`);
+	elems.calculatorScreen.classList.add(`screen_theme${number}`);
+	elems.calculatorInput.classList.add(`screen__input_theme${number}`);
 	elems.keypad.classList.add(`keypad_theme${number}`);
 	for (let btn of elems.keypadBtns) {
 		btn.classList.add(`keypad-small-btn_theme${number}`);

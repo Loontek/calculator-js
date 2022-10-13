@@ -8,7 +8,8 @@ export function removeTheme(number) {
 		btn.classList.remove(`theme-changer__btn_theme${number}`);
 	};
 	elems.themeBtnIndicator.classList.remove(`theme-changer__indicator_theme${number}`);
-	elems.calculatorScreen.classList.remove(`main-content__screen_theme${number}`);
+	elems.calculatorScreen.classList.remove(`screen_theme${number}`);
+	elems.calculatorInput.classList.remove(`screen__input_theme${number}`);
 	elems.keypad.classList.remove(`keypad_theme${number}`);
 	for (let btn of elems.keypadBtns) {
 		btn.classList.remove(`keypad-small-btn_theme${number}`);

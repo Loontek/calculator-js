@@ -6,6 +6,8 @@ export function showInput() {
 	if (store.inputValue === '') {
 		resetScreen();
 	} else {
-		elems.calculatorScreen.value = store.inputValue;
+		elems.calculatorExpression.style.display = 'none';
+		elems.calculatorScreen.style.padding = '30px 25px';
+		elems.calculatorInput.value = store.inputValue;
 	}
 }

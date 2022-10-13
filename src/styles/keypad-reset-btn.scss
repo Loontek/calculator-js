@@ -1,7 +1,7 @@
 .keypad-reset-btn {
 	font-size: 28px;
 	text-transform: uppercase;
-	transition: background .5s, box-shadow .5s, color .5s;
+	transition: background .5s, color .5s;
 
 	&_theme1 {
 		background: var(--theme1-Desaturated-dark-blue-key-background);
@@ -13,8 +13,8 @@
 		}
 
 		&:active {
-			transition: background .1s;
-			background: hsla(33, 4%, 57%);
+			transform: translateY(5px);
+			box-shadow: 0 0;
 		}
 	}
 
@@ -28,8 +28,8 @@
 		}
 
 		&:active {
-			transition: background .1s;
-			background: hsla(30, 1%, 58%);
+			transform: translateY(5px);
+			box-shadow: 0 0;
 		}
 	}
 
@@ -43,8 +43,8 @@
 		}
 
 		&:active {
-			transition: background .1s;
-			background: hsla(0, 0%, 63%);
+			transform: translateY(5px);
+			box-shadow: 0 0;
 		}
 	}
 
